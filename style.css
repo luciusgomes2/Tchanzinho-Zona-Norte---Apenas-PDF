@@ -1,0 +1,73 @@
+:root {
+  --primary: #EF4C5B;
+  --bg-color: #FDF7F7;
+  --text-dark: #333;
+  --card-bg: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  max-width: 1340px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  max-height: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.title {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.song-item {
+  background: var(--card-bg);
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--primary);
+  transition: transform 0.2s;
+}
+
+.song-item:active {
+  transform: scale(0.98);
+}
+
+.song-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 1.4rem;
+  font-weight: 600;
+  flex-grow: 1;
+}
